@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Health Monitoring System</title>
+    <script src="https://kit.fontawesome.com/4adfaa6656.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="heading">Health Monitoring System</h1>
+    <div class="box-wrapper">
+        <h3 class="box-wrapper-head">Sensors Readings</h3>
+        <i class="fa-solid fa-temperature-half"></i><label>Room Temperature<span>31</span><sup>°C</sup></label>
+        <hr>
+        <i class="fa-solid fa-droplet"></i><label>Room Humidity<span>73</span><sup>%</sup></label>
+        <hr>
+        <i class="fa-solid fa-heart-pulse"></i><label>Heart Rate<span>85</span><sup>BPM</sup></label>
+        <hr>
+        <i class="fa-solid fa-hand-holding-droplet"></i><label>SpO<sub>2</sub><span>97</span><sup>%</sup></label>
+        <hr>
+        <i class="fa-solid fa-temperature-full"></i><label>Body Temperature<span>31</span><sup>°C</sup></label>
+    </div>
+</body>
+<style>
+    .heading {
+        text-align: center;
+        font-family: Arial;
+        font-weight: bold;
+        color: rgb(8, 136, 93);
+    }
+
+    .box-wrapper-head {
+        font-family: Arial;
+        font-weight: bold;
+    }
+
+    .box-wrapper {
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.9);
+        width: 100%; 
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    span {
+        margin-left: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 40px;
+        font-size: 25px;
+    }
+
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    sup {
+        font-family: Arial;
+        font-weight: bold;
+    }
+
+    i {
+        font-size: 25px;
+        font-weight: bold;
+        margin-right: 4px;
+    }hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+    margin: 10px 0;
+}
+
+
+    .fa-temperature-half {
+        color: rgb(8, 71, 207);
+        font-size: 30px;
+    }
+
+    .fa-droplet {
+        color: skyblue;
+    }
+
+    .fa-heart-pulse {
+        color: red;
+    }
+
+    .fa-temperature-full {
+        color: rgb(221, 9, 9);
+    }
+
+    .fa-hand-holding-droplet {
+        color: rgb(230, 11, 139);
+    }
+    @media only screen and (max-width: 600px) {
+    .box-wrapper {
+        height:100%;
+        width:87%;
+    }
+}
+</style>
+
+</html>
